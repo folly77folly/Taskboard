@@ -13,15 +13,6 @@ function TaskBoard() {
 
     const[image, setImage] = useState();
 
-    const randImage = ()=>{
-        const URL = "https://picsum.photos/id/77/info";
-        axios.get(URL).then((response)=>{
-            console.log(response.data)
-        }).catch((error)=>{
-            console.log(error.message)
-        })
-        
-    }
     useEffect(()=>{
         let fig = Math.floor(Math.random() * 1001);
         console.log(fig);
